@@ -1,10 +1,14 @@
-import React from "react";
+import { React, useState } from "react";
 import "./index.css";
 import bgrooms from "../img/background/bgrooms.jpg";
 
 import testimage from "../img/rooms/room01.jpg";
+import Logo from "../img/marikina-hotel.png";
+import "./index.css";
+import Button from "../btn/login";
 
 function Rooms() {
+  let [open, setOpen] = useState(false);
   return (
     <>
       <div className="relative">
