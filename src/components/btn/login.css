@@ -1,0 +1,14 @@
+.bg-green {
+  background-color: #86efac;
+}
+.bg-teal {
+  background-color: #0f766e;
+}
+.btn-color {
+  background-color: #0f766e;
+}
+.bg-hover:hover {
+  background-color: #6fc27c;
+
+  color: rgb(0, 0, 0);
+}

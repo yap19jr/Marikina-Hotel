@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-green {
+  background-color: #86efac;
+}
+.bg-teal {
+  background-color: #0f766e;
+}
+
+.md-item-flex-end {
+  justify-content: space-between;
+}
+
+.text-li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 12px;
+  position: relative;
+  justify-content: flex-end;
+}
+.text-li:hover {
+  width: 100%;
+  background-color: #0f766e;
+  color: aliceblue;
+  border-radius: 10px;
+}
+.text-xll {
+  font-size: xx-large;
+}
