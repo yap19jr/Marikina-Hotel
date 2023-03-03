@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
+
+import IndexRouter from "./routers";
 import Home from "./components/home";
 import Rooms from "./components/rooms";
 import MeetingAndEvents from "./components/meeting&event";
@@ -14,10 +15,9 @@ import NotFound from "./components/404";
 function App() {
   return (
     <>
-      <NavBar />
-      <Home />
       <Routes>
-        <Route>
+        <Route path="/" element={<IndexRouter />} >
+          <Route path="/" index element={<Home />} />
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/meeting&events" element={<MeetingAndEvents />} />
           <Route path="/discover" element={<Discover />} />
