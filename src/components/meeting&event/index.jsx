@@ -1,13 +1,45 @@
+import { render } from "@testing-library/react";
 import React from "react";
+import "./index.css";
 import "./index.css";
 import bgrooms from "../img/background/meeting-room.jpg";
 
 import testimage from "../img/meetingrooms/wedding-venue.jpg";
 
-function MeetingAndEvents() {
-  return (
-    <>
+class MeetingAndEvents extends React.Component {
+  state = {
+    product: [
+      {
+        id: "1",
+        title: "Deluxe Room",
+        src: [
+          "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
+          "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
+          "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
+          "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
+        ],
+
+        description: "Deluxe roomssssss",
+        content: "welcome to our",
+        price: 1850,
+        colors: ["red", "black", "crimson", "teal"],
+        count: 1,
+      },
+    ],
+    index: 0,
+  };
+  handleTab = (index) => {
+    this.setState({ index: index });
+  };
+
+  render() {
+    const { product, index } = this.state;
+    return (
+      <>
       <div className="relative">
+        <div className="bg-green h-28 w-full">
+
+        </div>
         <img
           src={bgrooms}
           className="absolute inset-0 object-cover w-full h-full shadow-md"
@@ -38,161 +70,41 @@ function MeetingAndEvents() {
           </div>
         </div>
       </div>
-      <section class="w-full bg-green shadow-md">
-        <div className=" h-10  mr-10 ml-10 ">
-          <div class="grid grid-cols-3 gap-4 ">
-            <div>
-              <div class="wrapper text-gray-900">
-                <div>
-                  <img
-                    src={testimage}
-                    alt="Room 1"
-                    class=" object-cover object-center rounded-lg shadow-md w-80"
-                  />
-                  <div class="relative px-4 -mt-16 ">
-                    <div class="bg-green p-6 rounded-lg shadow-lg">
-                      <div class="flex items-baseline">
-                        <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-                          New
-                        </span>
-                        <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-                          &bull; up to 140pax
-                        </div>
-                      </div>
-
-                      <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                        Indoor Wedding
-                      </h4>
-
-                      <div class="mt-1">
-                        PHP 150,000.00
-                        <span class="text-gray-600 text-sm"> </span>
-                      </div>
-                      <div className=" mt-1 ">
-                        <span>
-                          <button className="bg-teal text-white rounded-lg btn-view ml-1 mr-1">
-                            {" "}
-                            View Details
-                          </button>
-                          <button className="bg-teal text-white rounded-lg btn-view ml-1 mr-1">
-                            {" "}
-                            Book Now
-                          </button>
-                        </span>
-                      </div>
-                      <div class="mt-4">
-                        <span class="text-teal-600 text-md font-semibold">
-                          4/5 ratings{" "}
-                        </span>
-                        <span class="text-sm text-gray-600">
-                          (based on 234 ratings)
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <div className="app">
+        {product.map((item) => (
+          <div className="details" key={item._id}>
+            <div className="big-img">
+              <img src={item.src[index]} alt="" />
+            </div>
+            <div className="box">
+              <div className="row">
+                <h2>{item.title}</h2>
+                <span>PHP{item.price}</span>
               </div>
+              <div className="colors">
+                {item.colors.map((color, index) => (
+                  <button style={{ background: color }} key={index}></button>
+                ))}
+              </div>
+              <p>{item.description}</p>
+              <p>{item.content}</p>
+              <div className="thumb">
+                {item.src.map((img, index) => (
+                  <img
+                    src={img}
+                    alt=""
+                    key={index}
+                    onClick={() => this.handleTab(index)}
+                  />
+                ))}
+              </div>
+              <button className="book">Book Now</button>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="footer">
-        <div class="w-full text-center text-md-start mt-5 bg-green text text-gray-800">
-          <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3 text-secondary"></i>
-                Marikina Hotel
-              </h6>
-              <p>
-                The Marikina Hotel is a unique property, convenient for your
-                business visits, family and city breaks lovers.
-              </p>
-            </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Services</h6>
-              <p>
-                <a href="#!" class="text-reset">
-                  Rooms
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Meeting Rooms
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Discover
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Gallery
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Services
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Contact
-                </a>
-              </p>
-            </div>
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">General</h6>
-              <p>
-                <a href="#!" class="text-reset">
-                  General Terms & Condition of Sale
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Privacy
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Cookie Policy
-                </a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset">
-                  Digital Policy
-                </a>
-              </p>
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p>
-                <i class="fas fa-home me-3 text-secondary"></i> Marikina City
-                Metro Manila Philippines
-              </p>
-              <p>
-                <i class="fas fa-envelope me-3 text-secondary"></i>
-                marikina-hotel@marikinahotel.com
-              </p>
-              <p>
-                <i class="fas fa-phone me-3 text-secondary"></i> + 639 123 412
-                385
-              </p>
-              <p>
-                <i class="fas fa-print me-3 text-secondary"></i> + 632 888 888
-                88
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center p-4">© 2023 All Rights Reserved</div>
-      </section>
-    </>
-  );
+        ))}
+      </div>
+      </>
+    );
+  }
 }
-
 export default MeetingAndEvents;

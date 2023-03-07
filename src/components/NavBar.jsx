@@ -53,10 +53,10 @@ const NavBar = () => {
             </li>
             <li className="md:ml-8 text-lg md:my-0 my-7">
               <Link
-                to="/discovery"
+                to="/discover"
                 className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
               >
-                Discovery
+                Discover
               </Link>
             </li>
             <li className="md:ml-8 text-lg md:my-0 my-7">
