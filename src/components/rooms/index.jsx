@@ -2,6 +2,8 @@ import { render } from "@testing-library/react";
 import React from "react";
 import "./index.css";
 import bgrooms from "../img/background/bgrooms.jpg"
+import BookNow from "../Buttons/btnBookNow";
+
 
 class Rooms extends React.Component {
   state = {
@@ -16,10 +18,9 @@ class Rooms extends React.Component {
           "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
         ],
 
-        description: "Deluxe roomssssss",
+        description: "Families, couples and solo travelers find everything they need – and so much more – in a Deluxe Room. Natural daylight floods this welcoming space. In the evening, let the glittering skyline mesmerize you as you reach higher levels of relaxation. Work at the spacious desk, unwind in the cozy chaise longue or simply take in your surroundings from the comfortable vantage point of your Live N Dream bed. Whether you’re in Quezon City for business or leisure, Novotel is your home.",
         content: "welcome to our",
         price: 1850,
-        colors: ["red", "black", "crimson", "teal"],
         count: 1,
       },
     ],
@@ -31,6 +32,7 @@ class Rooms extends React.Component {
 
   render() {
     const { product, index } = this.state;
+    
     return (
       <>
             <div className="relative">
@@ -73,11 +75,6 @@ class Rooms extends React.Component {
                 <h2>{item.title}</h2>
                 <span>PHP{item.price}</span>
               </div>
-              <div className="colors">
-                {item.colors.map((color, index) => (
-                  <button style={{ background: color }} key={index}></button>
-                ))}
-              </div>
               <p>{item.description}</p>
               <p>{item.content}</p>
               <div className="thumb">
@@ -90,7 +87,8 @@ class Rooms extends React.Component {
                   />
                 ))}
               </div>
-              <button className="book">Book Now</button>
+          
+             <BookNow/>
             </div>
           </div>
         ))}

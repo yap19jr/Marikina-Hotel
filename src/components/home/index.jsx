@@ -3,7 +3,7 @@ import "./index.css";
 import hero from "../img/background/marikina-hotel.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import video from "../img/background/marikinaHotel.mp4"
+import video from "../img/rooms/room05.jpg"
 
 import firstSlide from "../img/rooms/room01.jpg";
 import secondSlide from "../img/rooms/room02.jpg";
@@ -12,7 +12,7 @@ import forthSlide from "../img/rooms/room04.jpg";
 import fifthSlide from "../img/rooms/room05.jpg";
 
 import meetingFirstSlide from "../img/meetingrooms/board-room.jpg";
-import meetingSecondSlide from "../img/meetingrooms/businesscenter-room.jpg";
+import meetingSecondSlide from "../img/meetingrooms/businesscenter-room.jpg";        
 import meetingThirdSlide from "../img/meetingrooms/garden-venue.jpg";
 import meetingForthSlide from "../img/meetingrooms/wedding-venue.jpg";
 import meetingFifthSlide from "../img/meetingrooms/loungebar-room.jpg";
@@ -48,7 +48,6 @@ const Home = () => {
                   Hotel givesMetro Manila view with a difference – come join us
                   up here and experience a stay like no other.
                 </p>
-
                 <p>
                   From your sky-high base in the fashion district, you are all
                   set to conquMetro Manila in style. Wake up to the Hotel’s

@@ -12,7 +12,7 @@ const NavBar = () => {
         <div className="container-fluid flex flex-wrap mx-auto bg-green py-4 md:px-10 px-7 justify-between shadow-md">
           <div className="flex items-center cursor-pointer font-bold ">
             <span className=" mr-1 pt-2  text-xl">
-              <img src={Logo} width={100} className="items-center" alt="" />
+              <img src={Logo} width={100} alt="" />
             </span>
             Marikina Hotel
           </div>
@@ -28,7 +28,7 @@ const NavBar = () => {
               open ? "top" : "top-[-490px]"
             }`}
           >
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-1 text-lg md:my-0 my-7">
               <Link
                 to="/"
                 className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
