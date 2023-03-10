@@ -8,6 +8,20 @@ import attractions4 from "../img/attractions/ourLadyOfTheAbandonedChurch.jpg";
 
 import ban1 from "../img/localevents/band1.jpg";
 
+const attracttion = [
+  {
+    id: 1,
+    name: 'Shoe Museum',
+    href: '#',
+    imageSrc: 'https://hotelsiru.com/wp-content/uploads/2019/02/services-breakfast2-1.jpg',
+    imageAlt: "Shoe Museum",
+    description: 'As the shoe capital, Marikina, of course, has a Shoe Museum.Officially opened in 2001, the Shoe Museum is built to nurture the historical and cultural value of the local shoe industry.',
+  },
+  // More products...
+]
+
+
+
 function Discover() {
   return (
     <>
@@ -48,11 +62,13 @@ function Discover() {
           <div className="pl-5">
             <h2>ATTRACTIONS</h2>
           </div>
-          <div className="ml-5 mr-5 flex">
-          <div class="card w-80 mr-5">
+          <div className="flex mx-auto max-w-2xl py-4 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="grid grid-cols-1 gap-y-14 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  xl:gap-x-20 ">
+          <div class="card w-80">
               <img src={attractions1} class="card-img-top" alt="..." />
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Shoe Museum</h5>
+                <hr />
                 <p class="card-text">
                   As the shoe capital, Marikina, of course, has a Shoe Museum.
                   Officially opened in 2001, the Shoe Museum is built to nurture
@@ -66,6 +82,7 @@ function Discover() {
               <img src={attractions2} class="card-img-top" alt="..." />
               <div class="card-body d-flex flex-column ">
                 <h5 class="card-title">Book Museum</h5>
+                <hr />
                 <p class="card-text">
                 Tucked away in a quiet neighborhood in Dao Street, the Book Museum cum Ethnology Center exhibits the personal book and artifact collection of Atty. Dominador Buhain, chairman and president of Rex Group of companies. The museum includes first edition books,
                 </p>
@@ -78,6 +95,7 @@ function Discover() {
               <img src={attractions3} class="card-img-top" alt="..." />
               <div class="card-body d-flex flex-column ">
                 <h5 class="card-title">Marikina River Park</h5>
+                <hr />
                 <p class="card-text">
                 Found alongside Marikina River, the Marikina River Park is a 220-hectare system of parks, trails, open spaces, recreation facilities and commercial complex. The Marikina River Park is the focal point of the city’s communities and cultural activities.
                 </p>
@@ -89,6 +107,7 @@ function Discover() {
               <img src={attractions4} class="card-img-top" alt="..." />
               <div class="card-body d-flex flex-column ">
                 <h5 class="card-title">Our Lady of the Abandoned Church</h5>
+                <hr />
                 <p class="card-text">
                 The Our Lady of Abandoned Parish in Marikina opened in 1572 and consecrated in 1690. The church was originally constructed from bamboo and leaves, and then on 1687, it is constructed in Baroque style with heavily fortified façade, high ceiling, and round pediment bell-tower.
                 </p>
@@ -98,7 +117,7 @@ function Discover() {
             </div>
           </div>
         </div>
-
+        </div>
         <div className="pl-5">
           <hr />
           <h2>LOCAL EVENTS</h2>

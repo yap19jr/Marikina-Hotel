@@ -10,17 +10,19 @@
 }
 
 .text-li {
-  display: inline-block;
+  display: flex;
   list-style: none;
-  padding: 8px 12px;
+  padding: 2px 2px;
   position: relative;
   justify-content: space-between;
 }
 .text-li:hover {
   width: 100%;
-  background-color: #0f766e;
+  background-color: #333;
   color: aliceblue;
-  border-radius: 10px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
 }
 
 .z-index {
@@ -38,15 +40,26 @@
 
 @media (max-width:1024px){
   .bg-green li{
-    font-size: small;
-    margin-right: -10px;
+    font-size: medium;
+    margin-right: -13px;
 }
-
+.bg-green li button{
+  width: 60%;
+  font-size: small;
+  margin-right: 60px;
+  margin-bottom: 0%;
+}
 }
 @media (max-width:768){
   .bg-green li{
-    font-size: small;
-    margin-right: -10px;
+    font-size: x-small;
+    margin-right: -13px;
+}
+.bg-green li button{
+  width: 60%;
+  font-size: small;
+  margin-right: 60px;
+  margin-bottom: 0%;
 }
 
 }

@@ -24,7 +24,7 @@ const Home = () => {
         <img src={hero} className="w-full" alt="" />
         <div className="w-full">
           <div class=" ">
-            <div class="bg-green">
+            <div class="bg-gradient-to-r from-gray-100 via-[#85ca85] to-gray-100">
               <div class="hero text-gray-800 text">
                 <h3>A VIEW FROM THE TOP</h3>
               </div>
@@ -70,7 +70,7 @@ const Home = () => {
         </div>
       </div>
       <div class="w-full">
-        <div class="bg-green">
+        <div class="bg-gradient-to-r from-gray-100 via-[#85ca85] to-gray-100">
           <div class="hero text">
             <h3>ROOMS & SUITES</h3>
           </div>
@@ -129,7 +129,7 @@ const Home = () => {
       </div>
 
       <div class="w-full">
-        <div class="bg-green">
+        <div class="bg-gradient-to-r from-gray-100 via-[#85ca85] to-gray-100">
           <div class="hero text text-gray-800">
             <h3>Meeting & Events</h3>
           </div>
