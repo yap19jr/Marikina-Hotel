@@ -31,7 +31,7 @@ const NavBar = () => {
             <li className="md:ml-1 text-lg md:my-0 my-7">
               <Link
                 to="/"
-                className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
               >
                 Home
               </Link>
@@ -39,14 +39,14 @@ const NavBar = () => {
             <li className="md:ml-8 text-lg md:my-0 my-7">
               <Link
                 to="/rooms"
-                className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
               >
                 Rooms
               </Link>
             </li>
             <li className="md:ml-8 text-lg md:my-0 my-7">
               <Link to="/meeting&events"
-                className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
               >
                 Meeting & Events
               </Link>
@@ -54,7 +54,7 @@ const NavBar = () => {
             <li className="md:ml-8 text-lg md:my-0 my-7">
               <Link
                 to="/discover"
-                className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
               >
                 Discover
               </Link>
@@ -62,7 +62,7 @@ const NavBar = () => {
             <li className="md:ml-8 text-lg md:my-0 my-7">
               <Link
                 to="./gallery"
-                className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
               >
                 Gallery
               </Link>
@@ -70,21 +70,21 @@ const NavBar = () => {
             <li className="md:ml-8 text-lg md:my-0 my-7">
               <Link
                 to="./services"
-                className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 text-li no-underline"
               >
                 Services
               </Link>
             </li>
             <li className="md:ml-8 text-lg md:my-0 my-7">
               <Link
-                to="./contact"
-                className="text-gray-800 hover:text-gray-400 duration-500 text-li no-underline"
+                to="./contactUs"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 text-li no-underline"
               >
                 Contact
               </Link>
             </li>
             <li className="md:ml-8 text-lg md:my-0 my-7">
-                <button className="btn-color text-white text-lg  py-2 px-6 rounded md:ml-8 btn-hover duration-500">
+                <button className="btn-color text-white text-lg  py-2 px-6 rounded md:ml-8 hover:bg-stone-600 duration-500">
                   Book Now
                 </button>
             </li>

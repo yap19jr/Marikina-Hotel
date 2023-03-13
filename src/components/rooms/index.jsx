@@ -19,7 +19,7 @@ class Rooms extends React.Component {
         ],
 
         description: "Families, couples and solo travelers find everything they need – and so much more – in a Deluxe Room. Natural daylight floods this welcoming space. In the evening, let the glittering skyline mesmerize you as you reach higher levels of relaxation. Work at the spacious desk, unwind in the cozy chaise longue or simply take in your surroundings from the comfortable vantage point of your Live N Dream bed. Whether you’re in Quezon City for business or leisure, Novotel is your home.",
-        content: "welcome to our",
+        content: "Free Wifi",
         price: 1850,
         count: 1,
       },

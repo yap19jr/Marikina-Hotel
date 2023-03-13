@@ -115,7 +115,7 @@ function BookNow() {
                         </select>
                       </div>
                     </div>
-
+{/* 
                     <div class="md:col-span-5">
                       <div class="inline-flex items-center">
                         <input
@@ -128,12 +128,12 @@ function BookNow() {
                           My billing address is different than above.
                         </label>
                       </div>
-                    </div>
+                    </div> */}
 
                     <div class="md:col-span-5 text-right">
                       <div class="inline-flex items-end">
-                        <button class="block w-full md:w-auto focus:outline-none rounded-lg px-5 py-2.5 text-center bg-zinc-800 text-white hover:bg-white  hover:text-black">
-                          Submit
+                        <button class="block w-full md:w-auto focus:outline-none rounded-lg px-5 py-2.5 text-center bg-zinc-800 text-white hover:bg-stone-600  hover:text-black">
+                          Book Now
                         </button>
                       </div>
                     </div>

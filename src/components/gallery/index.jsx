@@ -1,5 +1,5 @@
 import React from 'react'
-import Gallery from "../img/background/gallery.jpg"
+import bgGallery from "../img/background/gallery.jpg"
 
 import testimage1 from "../img/meetingrooms/wedding-venue.jpg";
 import testimage2 from "../img/rooms/room01.jpg";
@@ -8,13 +8,13 @@ import testimage4 from "../img/rooms/room02.jpg";
 import testimage5 from "../img/meetingrooms/businesscenter-room.jpg";
 import testimage6 from "../img/rooms/room05.jpg";
 
-const index = () => {
+const Gallery = () => {
   return (
     <>
    <div className="relative">
         <div className="bg-green h-24 w-full "></div>
         <img
-          src={Gallery}
+          src={bgGallery}
           className="absolute inset-0 object-cover w-full h-full shadow-md"
           alt=""
         />
@@ -96,4 +96,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Gallery

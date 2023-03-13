@@ -131,7 +131,7 @@ const Home = () => {
       <div class="w-full">
         <div class="bg-gradient-to-r from-gray-100 via-[#85ca85] to-gray-100">
           <div class="hero text text-gray-800">
-            <h3>Meeting & Events</h3>
+            <h3>MEETING & EVENTS</h3>
           </div>
         </div>
         <Carousel className="text-center ml-28 mr-28">
