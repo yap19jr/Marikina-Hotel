@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="text-center p-4">© 2023 All Rights Reserved</div>
+        <div class="text-center p-4 bg-green">© 2023 All Rights Reserved</div>
       
       </section>
   )

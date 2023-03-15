@@ -30,7 +30,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class=" w-full row md">
+          <div class=" w-full row">
             <div class="column">
               <div class="hero topview">
                 <div class="topview-video">
@@ -75,7 +75,8 @@ const Home = () => {
             <h3>ROOMS & SUITES</h3>
           </div>
         </div>
-        <Carousel className=" text-center ml-28 mr-28 ">
+        <div className=" text-center ml-28 mr-28 max-sm:mr-0 max-sm:ml-0">
+        <Carousel className=" w-full">
           <Carousel.Item interval={1000}>
             <img
               className="d-block w-100 z-10"
@@ -83,8 +84,8 @@ const Home = () => {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              {/* <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -94,38 +95,29 @@ const Home = () => {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={thirdSlide} alt="Third slide" />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+          
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={forthSlide} alt="Third slide" />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+            
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={fifthSlide} alt="Third slide" />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+        
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        </div>
       </div>
 
       <div class="w-full">
@@ -134,7 +126,8 @@ const Home = () => {
             <h3>MEETING & EVENTS</h3>
           </div>
         </div>
-        <Carousel className="text-center ml-28 mr-28">
+        <div className="max-sm:mr-0 max-sm:ml-0 ml-28 mr-28">
+        <Carousel className="text-center ">
           <Carousel.Item interval={1000}>
             <img
               className="d-block w-100 z-10"
@@ -142,8 +135,8 @@ const Home = () => {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              {/* <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={500}>
@@ -153,8 +146,6 @@ const Home = () => {
               alt="Second slide"
             />
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -164,10 +155,6 @@ const Home = () => {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -177,10 +164,6 @@ const Home = () => {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -190,13 +173,10 @@ const Home = () => {
               alt="Third slide"
             />
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+        </div>
       </div>
     </section>
   );

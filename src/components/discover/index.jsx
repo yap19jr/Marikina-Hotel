@@ -74,7 +74,7 @@ function Discover() {
                   Officially opened in 2001, the Shoe Museum is built to nurture
                   the historical and cultural value of the local shoe industry.
                 </p>
-                <button type="button" class="align-self-end  bg-green-400 hover:bg-teal-600 mt-auto pt-1 rounded pb-1 w-full">View More.</button>
+                <button type="button" class="align-self-end  bg-zinc-800 hover:bg-stone-600 mt-auto pt-1 rounded pb-1 w-full text-white">View More.</button>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ function Discover() {
                 <p class="card-text">
                 Tucked away in a quiet neighborhood in Dao Street, the Book Museum cum Ethnology Center exhibits the personal book and artifact collection of Atty. Dominador Buhain, chairman and president of Rex Group of companies. The museum includes first edition books,
                 </p>
-                <button type="button" class="align-self-end bg-green-400 hover:bg-teal-600 mt-auto pt-1 pb-1 rounded w-full">View More.</button>
+                <button type="button" class="align-self-end bg-zinc-800 hover:bg-stone-600 mt-auto pt-1 pb-1 rounded w-full text-white">View More.</button>
                 
               </div>
             </div>
@@ -99,7 +99,7 @@ function Discover() {
                 <p class="card-text">
                 Found alongside Marikina River, the Marikina River Park is a 220-hectare system of parks, trails, open spaces, recreation facilities and commercial complex. The Marikina River Park is the focal point of the city’s communities and cultural activities.
                 </p>
-                <button type="button" class="align-self-end bg-green-400 hover:bg-teal-600 mt-auto pt-1 pb-1 rounded w-full">View More.</button>
+                <button type="button" class="align-self-end bg-zinc-800 hover:bg-stone-600 mt-auto pt-1 pb-1 rounded w-full text-white">View More.</button>
                 
               </div>
             </div>
@@ -111,7 +111,7 @@ function Discover() {
                 <p class="card-text">
                 The Our Lady of Abandoned Parish in Marikina opened in 1572 and consecrated in 1690. The church was originally constructed from bamboo and leaves, and then on 1687, it is constructed in Baroque style with heavily fortified façade, high ceiling, and round pediment bell-tower.
                 </p>
-                <button type="button" class="align-self-end bg-green-400 hover:bg-teal-600 mt-auto pt-1 pb-1 rounded w-full">View More.</button>
+                <button type="button" class="align-self-end bg-zinc-800 hover:bg-stone-600 mt-auto pt-1 pb-1 rounded w-full text-white">View More.</button>
                 
               </div>
             </div>

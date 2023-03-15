@@ -9,10 +9,10 @@ const NavBar = () => {
   return (
     <nav>
       <div className="w-full fixed z-40 top-0 left-0">
-        <div className="container-fluid flex flex-wrap mx-auto bg-green py-4 md:px-10 px-7 justify-between shadow-md md-768">
+        <div className="container-fluid flex flex-wrap mx-auto bg-green py-2 md:px-10 px-7 justify-between shadow-md md-768">
           <div className="flex items-center cursor-pointer font-bold title lg:text-sm xl:text-xl md:text-sm">
-            <span className=" mr-1 pt-2  text-xl">
-              <img src={Logo} width={100} alt="" className=" md:w-10 lg:w-14 xl:w-28"/>
+            <span className=" mr-1 pt-2  text-md">
+              <img src={Logo} width={100} alt="" className="md:w-10 lg:w-10 xl:w-28"/>
             </span>
             Marikina Hotel
           </div>
@@ -24,11 +24,11 @@ const NavBar = () => {
             <ion-icon name={open ? "close" : "menu"}></ion-icon>
           </div>
           <ul
-            className={`md:flex md:items-center md:pb-0 absolute bg-green md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-5 transition-all duration-500 ease-in ${
+            className={`md:flex md:items-center md:pb-0 max-sm:pt-4 absolute bg-green md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-5 transition-all duration-500 ease-in ${
               open ? "top" : "top-[-490px]"
             }`}
           >
-            <li className="md:ml-1 text-lg md:my-0 my-7">
+            <li className="max-md:ml-1 text-md max-md:my-0 my-7">
               <Link
                 to="/"
                 className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
@@ -36,7 +36,7 @@ const NavBar = () => {
                 Home
               </Link>
             </li>
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-8 text-md md:my-0 my-7">
               <Link
                 to="/rooms"
                 className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
@@ -44,14 +44,14 @@ const NavBar = () => {
                 Rooms
               </Link>
             </li>
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-8 text-md md:my-0 my-7">
               <Link to="/meeting&events"
                 className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
               >
                 Meeting & Events
               </Link>
             </li>
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-8 text-md md:my-0 my-7">
               <Link
                 to="/discover"
                 className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
@@ -59,7 +59,7 @@ const NavBar = () => {
                 Discover
               </Link>
             </li>
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-8 text-md md:my-0 my-7">
               <Link
                 to="./gallery"
                 className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 text-li no-underline"
@@ -67,7 +67,7 @@ const NavBar = () => {
                 Gallery
               </Link>
             </li>
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-8 text-md md:my-0 my-7">
               <Link
                 to="./services"
                 className="text-gray-800 hover:text-white hover:bg-stone-800 text-li no-underline"
@@ -75,7 +75,7 @@ const NavBar = () => {
                 Services
               </Link>
             </li>
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-8 text-md md:my-0 my-7">
               <Link
                 to="./contactUs"
                 className="text-gray-800 hover:text-white hover:bg-stone-800 text-li no-underline"
@@ -83,7 +83,7 @@ const NavBar = () => {
                 Contact
               </Link>
             </li>
-            <li className="md:ml-8 text-lg md:my-0 my-7">
+            <li className="md:ml-8 text-md md:my-0 my-7">
                 <button className="btn-color text-white text-lg  py-2 px-6 rounded md:ml-8 hover:bg-stone-600 duration-500">
                   Book Now
                 </button>

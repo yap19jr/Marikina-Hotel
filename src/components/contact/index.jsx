@@ -1,4 +1,5 @@
 import React from 'react'
+import MapContainer from "../google"
 
 import BackgroundImgs from '../img/background/bg-contact.jpg'
 
@@ -63,7 +64,9 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+                <MapContainer/>
             </div>
+           
     </>
   )
 }
