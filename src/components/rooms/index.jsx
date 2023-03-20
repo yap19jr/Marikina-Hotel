@@ -1,13 +1,14 @@
 import { render } from "@testing-library/react";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 import bgrooms from "../img/background/bgrooms.jpg"
 import BookNow from "../Buttons/btnBookNow";
 
-
 class Rooms extends React.Component {
-  state = {
-    product: [
+constructor(props) {
+  super(props);
+  this.state = {
+    rooms: [
       {
         id: "1",
         title: "Deluxe Room",
@@ -24,15 +25,49 @@ class Rooms extends React.Component {
         count: 1,
       },
     ],
-    index: 0,
+    selectedTab: null
   };
-  handleTab = (index) => {
-    this.setState({ index: index });
-  };
+}
+
+  componentDidMount() {
+    this.getAllRooms()
+  }
+
+  getAllRooms() {
+
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    };
+
+    fetch('http://localhost:3002/api/room', requestOptions)
+    .then((response)=> response.json())
+    .then((data)=>{
+      const derivedData = data.rooms.map(item => ({
+        ...item,
+        src: [
+          "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
+          "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
+          "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
+          "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
+        ],
+      }))
+      this.setState({rooms: derivedData});
+    })
+    .catch(error => console.log('error', error));
+  }
+ 
+  handleChangeTab = (selectedTab, index) => this.setState({ selectedTab: { selectedTab, index } });
+
+  // handleTab = (index) => {
+  //   this.setState({ index: index });
+  // };
+
 
   render() {
-    const { product, index } = this.state;
-    
+    const { rooms, selectedTab } = this.state;
+    // {console.log("DATAAAA :", this.state)}
+    console.log("THISSSS :", selectedTab?.selectedTab)
     return (
       <>
             <div className="relative">
@@ -65,25 +100,32 @@ class Rooms extends React.Component {
         </div>
       </div>
       <div className="app">
-        {product.map((item) => (
-          <div className="details" key={item._id}>
+        {rooms.map((item) => (
+          <div className="details" key={item.id}>
+            {/* {console.log("awdawdawd :", item)} */}
             <div className="big-img">
-              <img src={item.src[index]} alt="" />
+              {/* <h1>I AM IMAGE {JSON.stringify(item)}</h1> */}
+              {(selectedTab && selectedTab?.selectedTab.room_type_id === item.room_type_id) ? (
+                <img src={selectedTab?.selectedTab.src[selectedTab.index]} alt={item.name}
+              />
+              ) : <img src={item.src[0]} alt={item.name}
+              />}
             </div>
             <div className="box">
               <div className="row">
-                <h2>{item.title}</h2>
-                <span>PHP{item.price}</span>
+                <h2>{item.name}</h2>
+                <span>PHP {item.price_per_night}</span>
               </div>
               <p>{item.description}</p>
               <p>{item.content}</p>
               <div className="thumb">
-                {item.src.map((img, index) => (
+                {/* <h1>TEST</h1> */}
+                {item.src.map((img, ind) => (
                   <img
                     src={img}
                     alt=""
-                    key={index}
-                    onClick={() => this.handleTab(index)}
+                    key={ind}
+                    onClick={() => this.handleChangeTab(item, ind)}
                   />
                 ))}
               </div>
