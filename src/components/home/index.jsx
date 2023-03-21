@@ -3,7 +3,7 @@ import "./index.css";
 import hero from "../img/background/marikina-hotel.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import video from "../img/rooms/room05.jpg"
+import video from "../img/background/marikinaHotel.mp4"
 
 import firstSlide from "../img/rooms/room01.jpg";
 import secondSlide from "../img/rooms/room02.jpg";
@@ -30,12 +30,12 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class=" w-full row">
-            <div class="column">
-              <div class="hero topview">
+          <div class=" w-full row ">
+            <div class="column ">
+              <div class="hero max-md:pl-1.5">
                 <div class="topview-video">
-                  <div>
-                    <video src={video}  loop muted  autoplay="autoplay" />
+                  <div className=" max-md:w-96 text">
+                    <video src={video}  loop muted  autoplay="autoplay" className=" md:h-max" />
                   </div>
                 </div>
               </div>
@@ -127,7 +127,8 @@ const Home = () => {
           </div>
         </div>
         <div className="max-sm:mr-0 max-sm:ml-0 ml-28 mr-28">
-        <Carousel className="text-center ">
+
+        <Carousel className="carousel text-center ">
           <Carousel.Item interval={1000}>
             <img
               className="d-block w-100 z-10"

@@ -1,5 +1,5 @@
-import React from 'react'
-import bgGallery from "../img/background/gallery.jpg"
+import React from "react";
+import bgGallery from "../img/background/gallery.jpg";
 
 import testimage1 from "../img/meetingrooms/wedding-venue.jpg";
 import testimage2 from "../img/rooms/room01.jpg";
@@ -11,8 +11,7 @@ import testimage6 from "../img/rooms/room05.jpg";
 const Gallery = () => {
   return (
     <>
-   <div className="relative">
-        <div className="bg-green h-24 w-full "></div>
+      <div className="relative">
         <img
           src={bgGallery}
           className="absolute inset-0 object-cover w-full h-full shadow-md"
@@ -27,10 +26,11 @@ const Gallery = () => {
                   SEE NEW LUXURY FOR YOURSELF
                 </small>
                 <h2 className="max-w-lg mb-6 font-sans text-4xl font-extrabold tracking-tight text-white sm:text-4xl sm:leading-none">
-                TAKE A GALLERY TOUR OF THE HOTEL <br />
+                  TAKE A GALLERY TOUR OF THE HOTEL <br />
                 </h2>
                 <p className="max-w-xl mb-4 text-base text-white md:text-lg">
-                Catch a glimpse of The Marikina Hotel before you arrive by exploring the gallery, where luxury design does the talking.
+                  Catch a glimpse of The Marikina Hotel before you arrive by
+                  exploring the gallery, where luxury design does the talking.
                 </p>
               </div>
             </div>
@@ -39,61 +39,67 @@ const Gallery = () => {
       </div>
 
       <section class="overflow-hidden text-neutral-700">
-  <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-    <div class="-m-1 flex flex-wrap md:-m-2">
-      <div class="flex w-1/3 flex-wrap">
-        <div class="w-full p-1 md:p-2">
-          <img
-            alt="gallery"
-            class="block h-full w-full rounded-lg object-cover object-center"
-            src={testimage1} />
+        <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+          <div class="-m-1 flex flex-wrap md:-m-2">
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src={testimage1}
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src={testimage2}
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src={testimage3}
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src={testimage4}
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src={testimage5}
+                />
+              </div>
+            </div>
+            <div class="flex w-1/3 flex-wrap">
+              <div class="w-full p-1 md:p-2">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src={testimage6}
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="flex w-1/3 flex-wrap">
-        <div class="w-full p-1 md:p-2">
-          <img
-            alt="gallery"
-            class="block h-full w-full rounded-lg object-cover object-center"
-            src={testimage2} />
-        </div>
-      </div>
-      <div class="flex w-1/3 flex-wrap">
-        <div class="w-full p-1 md:p-2">
-          <img
-            alt="gallery"
-            class="block h-full w-full rounded-lg object-cover object-center"
-            src={testimage3} />
-        </div>
-      </div>
-      <div class="flex w-1/3 flex-wrap">
-        <div class="w-full p-1 md:p-2">
-          <img
-            alt="gallery"
-            class="block h-full w-full rounded-lg object-cover object-center"
-            src={testimage4} />
-        </div>
-      </div>
-      <div class="flex w-1/3 flex-wrap">
-        <div class="w-full p-1 md:p-2">
-          <img
-            alt="gallery"
-            class="block h-full w-full rounded-lg object-cover object-center"
-            src={testimage5} />
-        </div>
-      </div>
-      <div class="flex w-1/3 flex-wrap">
-        <div class="w-full p-1 md:p-2">
-          <img
-            alt="gallery"
-            class="block h-full w-full rounded-lg object-cover object-center"
-            src={testimage6} />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

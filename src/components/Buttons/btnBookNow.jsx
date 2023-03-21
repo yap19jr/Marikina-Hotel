@@ -8,7 +8,6 @@ function BookNow() {
     <>
       <button
         onClick={() => setLgShow(true)}
-        class="block w-full md:w-auto focus:outline-none rounded-lg px-5 py-2.5 text-center book hover:bg-white"
         type="button"
       >
         Book Now
@@ -48,7 +47,7 @@ function BookNow() {
                         id="email"
                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                         value=""
-                        placeholder="email@domain.com"
+                        placeholder="juandelacruz@email.com"
                       />
                     </div>
                     <div class="md:col-span-5">
@@ -115,20 +114,7 @@ function BookNow() {
                         </select>
                       </div>
                     </div>
-{/* 
-                    <div class="md:col-span-5">
-                      <div class="inline-flex items-center">
-                        <input
-                          type="checkbox"
-                          name="billing_same"
-                          id="billing_same"
-                          class="form-checkbox"
-                        />
-                        <label for="billing_same" class="ml-2">
-                          My billing address is different than above.
-                        </label>
-                      </div>
-                    </div> */}
+
 
                     <div class="md:col-span-5 text-right">
                       <div class="inline-flex items-end">

@@ -5,60 +5,13 @@
   background-color: #0f766e;
 }
 
-.md-item-flex-end {
-  justify-content: space-between;
-}
-
-.text-li {
-  display: flex;
-  list-style: none;
-  padding: 2px 2px;
-  position: relative;
-  justify-content: space-between;
-}
-.text-li:hover {
-  width: 100%;
-  border-radius: 5px;
-  align-items: center;
-  text-align: center;
-  padding: 2px;
+.sticky-nav {
+  position: sticky;
+  top: 0;
 }
 
 .z-index {
   position: absolute;
   z-index: -50;
 }
-.btn-color {
-  background-color: #333333;
-}
-.btn-hover:hover {
-  background-color: #ffffff;
 
-  color: rgb(0, 0, 0) !important;
-}
-
-@media (max-width:1024px){
-  .bg-green li{
-    font-size: medium;
-    margin-right: -13px;
-}
-.bg-green li button{
-  width: 60%;
-  font-size: small;
-  margin-right: 60px;
-  margin-bottom: 0%;
-}
-}
-@media (max-width:768){
-  .bg-green li{
-    font-size: x-small;
-    margin-right: -13px;
-}
-.bg-green li button{
-  width: 60%;
-  font-size: small;
-  margin-right: 60px;
-  margin-bottom: 0%;
-}
-
-}

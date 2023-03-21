@@ -26,7 +26,6 @@ function Discover() {
   return (
     <>
       <div className="relative">
-        <div className="bg-green h-28 w-full"></div>
         <img
           src={bgDiscovery}
           className="absolute inset-0 object-cover w-full h-full shadow-md"
