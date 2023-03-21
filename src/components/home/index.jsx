@@ -3,7 +3,7 @@ import "./index.css";
 import hero from "../img/background/marikina-hotel.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import video from "../img/background/marikinaHotel.mp4"
+import video from "../img/rooms/room01.jpg";
 
 import firstSlide from "../img/rooms/room01.jpg";
 import secondSlide from "../img/rooms/room02.jpg";
