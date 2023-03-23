@@ -3,7 +3,11 @@ import "./index.css";
 import hero from "../img/background/marikina-hotel.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
+<<<<<<< HEAD
 import video from "../img/rooms/deluxe room/deluxe-room-2.jpg";
+=======
+import video from "../img/rooms/room01.jpg";
+>>>>>>> f9d0d8587bd7e1b3167c38bafb1d2043974c926b
 
 import firstSlide from "../img/rooms/deluxe room/deluxe-room-2.jpg";
 import secondSlide from "../img/rooms/family room/family-room-3.jpg";
