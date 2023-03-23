@@ -10,7 +10,7 @@ const NavBar = () => {
     <nav>
       <div className="w-full z-40 top-0 left-0 sticky-nav">
         <div className="container-fluid flex flex-wrap bg-green py-7 lg:px-10 px-7 justify-between xl:justify-between shadow-md">
-          <div className="flex items-center cursor-pointer font-bold">
+          <div className="flex items-center cursor-pointer font-bold ">
             <span className="mr-1 pt-2 ">
             <Link
                 to="/"
@@ -20,6 +20,7 @@ const NavBar = () => {
               <img
                 src={Logo}
                 className="h-10 inline"
+                alt="hotel logo"
               />
               Marikina Hotel
   
@@ -35,14 +36,14 @@ const NavBar = () => {
           </div>
 
           <ul
-            className={`lg:flex lg:items-center lg:pb-0 max-lg:pt-14 absolute bg-green lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-5 transition-all duration-500 ease-in ${
+            className={`lg:flex lg:items-center lg:pb-0 max-lg:pt-14  absolute bg-green lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-5 transition-all duration-500 ease-in ${
               open ? "top" : "top-[-490px]"
             }`}
           >
-            <li className="lg:ml-1 lg:my-0 my-7">
+            <li className="lg:ml-1 lg:my-0 my-7 ">
               <Link
                 to="/"
-                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 rounded p-1 no-underline"
               >
                 Home
               </Link>
@@ -50,7 +51,7 @@ const NavBar = () => {
             <li className="lg:ml-8 lg:my-0 my-7">
               <Link
                 to="/rooms"
-                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 rounded p-1 no-underline"
               >
                 Rooms
               </Link>
@@ -58,7 +59,7 @@ const NavBar = () => {
             <li className="lg:ml-8 lg:my-0 my-7">
               <Link
                 to="/meeting&events"
-                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 rounded p-1  no-underline"
               >
                 Meeting & Events
               </Link>
@@ -66,7 +67,7 @@ const NavBar = () => {
             <li className="lg:ml-8 lg:my-0 my-7">
               <Link
                 to="/discover"
-                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 rounded  p-1  no-underline"
               >
                 Discover
               </Link>
@@ -74,7 +75,7 @@ const NavBar = () => {
             <li className="lg:ml-8 lg:my-0 my-7">
               <Link
                 to="./gallery"
-                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 rounded p-1  no-underline"
               >
                 Gallery
               </Link>
@@ -82,7 +83,7 @@ const NavBar = () => {
             <li className="lg:ml-8 lg:my-0 my-7">
               <Link
                 to="./services"
-                className="text-gray-800 hover:text-white hover:bg-stone-800 no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 rounded p-1  no-underline"
               >
                 Services
               </Link>
@@ -90,7 +91,7 @@ const NavBar = () => {
             <li className="lg:ml-8 lg:my-0 my-7">
               <Link
                 to="./contactUs"
-                className="text-gray-800 hover:text-white hover:bg-stone-800 no-underline"
+                className="text-gray-800 hover:text-white hover:bg-stone-800 duration-500 rounded p-1  no-underline"
               >
                 Contact
               </Link>

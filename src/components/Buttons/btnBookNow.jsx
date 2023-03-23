@@ -34,7 +34,6 @@ function BookNow() {
                         name="full_name"
                         id="full_name"
                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                        value=""
                         placeholder="Full Name"
                       />
                     </div>
@@ -46,7 +45,6 @@ function BookNow() {
                         name="email"
                         id="email"
                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                        value=""
                         placeholder="juandelacruz@email.com"
                       />
                     </div>
@@ -57,7 +55,6 @@ function BookNow() {
                         name="contactNumber"
                         id="contactNumber"
                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                        value=""
                         placeholder="+6390 0000 0000"
                       />
                     </div>
@@ -69,7 +66,6 @@ function BookNow() {
                         name="checkIn"
                         id="checkIn"
                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                        value=""
                       />
                     </div>
 
@@ -80,7 +76,6 @@ function BookNow() {
                         name="checkOut"
                         id="checkOut"
                         class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                        value=""
                       />
                     </div>
 

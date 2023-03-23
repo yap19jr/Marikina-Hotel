@@ -1,8 +1,5 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import bgrooms from "../img/background/meeting-room.jpg";
-
-import testimage from "../img/meetingrooms/wedding-venue.jpg";
 
 class MeetingAndEvents extends React.Component {
   state = {

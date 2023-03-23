@@ -8,20 +8,6 @@ import attractions4 from "../img/attractions/ourLadyOfTheAbandonedChurch.jpg";
 
 import ban1 from "../img/localevents/band1.jpg";
 
-const attracttion = [
-  {
-    id: 1,
-    name: 'Shoe Museum',
-    href: '#',
-    imageSrc: 'https://hotelsiru.com/wp-content/uploads/2019/02/services-breakfast2-1.jpg',
-    imageAlt: "Shoe Museum",
-    description: 'As the shoe capital, Marikina, of course, has a Shoe Museum.Officially opened in 2001, the Shoe Museum is built to nurture the historical and cultural value of the local shoe industry.',
-  },
-  // More products...
-]
-
-
-
 function Discover() {
   return (
     <>

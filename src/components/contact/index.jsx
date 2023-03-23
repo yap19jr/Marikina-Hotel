@@ -1,5 +1,4 @@
 import React from 'react'
-import MapContainer from "../google"
 
 import BackgroundImgs from '../img/background/bg-contact.jpg'
 
@@ -23,12 +22,12 @@ const Contact = () => {
                                         <h2 className="text-white text-base md:text-lg leading-8 tracking-wider">We believe digital innovation is at the heart of every business success</h2>
                                         <div className="mt-4 md:mt-8">
                                             <h2 className="text-sm md:text-base text-white font-semibold">Address</h2>
-                                            <h2 className="text-white text-base md:text-lg leading-8 tracking-wider mt-2">Office #13, NSTP, NUST University H-12 Sector, Islamabad</h2>
+                                            <h2 className="text-white text-base md:text-lg leading-8 tracking-wider mt-2">Pio del Pilar corner Tangerine Street, SSS Village Marikina City</h2>
                                         </div>
                                         <div className="mt-4 md:mt-8">
                                             <h2 className="text-sm md:text-base text-white font-semibold">Contact</h2>
-                                            <h2 className="text-white text-base md:text-lg leading-8 tracking-wider mt-2">+92 051 4567890 (Phone)</h2>
-                                            <h2 className="text-white text-base md:text-lg leading-8 tracking-wider mt-2">+92 123 4567890 (Cell)</h2>
+                                            <h2 className="text-white text-base md:text-lg leading-8 tracking-wider mt-2">+63 917-552-4627 (Phone)</h2>
+                                            <h2 className="text-white text-base md:text-lg leading-8 tracking-wider mt-2">+632 234-0540 or 423-5382 (LandLine)</h2>
                                         </div>
                                         <div className="mt-4 md:mt-8">
                                             <h2 className="text-sm md:text-base text-white font-semibold">Email</h2>
@@ -64,7 +63,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <MapContainer/>
             </div>
            
     </>

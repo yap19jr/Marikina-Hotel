@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
 import hero from "../img/background/marikina-hotel.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import video from "../img/background/marikinaHotel.mp4"
+import video from "../img/rooms/deluxe room/deluxe-room-2.jpg";
 
-import firstSlide from "../img/rooms/room01.jpg";
-import secondSlide from "../img/rooms/room02.jpg";
-import thirdSlide from "../img/rooms/room03.jpg";
-import forthSlide from "../img/rooms/room04.jpg";
-import fifthSlide from "../img/rooms/room05.jpg";
+import firstSlide from "../img/rooms/deluxe room/deluxe-room-2.jpg";
+import secondSlide from "../img/rooms/family room/family-room-3.jpg";
+import thirdSlide from "../img/rooms/panorama room/panorama-room-2.jpg";
+import forthSlide from "../img/rooms/superior vista/superior-vista-1.jpg";
+import fifthSlide from "../img/rooms/superior twin room/superior-twin-1.jpg";
 
 import meetingFirstSlide from "../img/meetingrooms/board-room.jpg";
 import meetingSecondSlide from "../img/meetingrooms/businesscenter-room.jpg";        

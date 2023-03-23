@@ -1,8 +1,12 @@
-import { render } from "@testing-library/react";
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import bgrooms from "../img/background/bgrooms.jpg";
 import BookNow from "../Buttons/btnBookNow";
+
+import image1 from "../img/rooms/deluxe room/deluxe-room-1.jpg"
+import image2 from "../img/rooms/deluxe room/deluxe-room-2.jpg"
+import image3 from "../img/rooms/deluxe room/deluxe-room-3.jpg"
+import image4 from "../img/rooms/deluxe room/deluxe-room-4.jpg"
 
 class Rooms extends React.Component {
   constructor(props) {
@@ -13,7 +17,7 @@ class Rooms extends React.Component {
           id: "1",
           title: "Deluxe Room",
           src: [
-            "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
+            ,
             "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
             "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
             "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
@@ -46,7 +50,7 @@ class Rooms extends React.Component {
         const derivedData = data.rooms.map((item) => ({
           ...item,
           src: [
-            "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
+            image1,
             "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
             "https://assets.roomstogo.com/LRsets_FL_tile_KS_515x349.jpg?cache-id=L_Rsets_FL_tile_KS_515x349_612da6bcf7",
             "https://www.thespruce.com/thmb/iMt63n8NGCojUETr6-T8oj-5-ns=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/PAinteriors-7-cafe9c2bd6be4823b9345e591e4f367f.jpg",
@@ -107,6 +111,7 @@ class Rooms extends React.Component {
               <div className="box">
                 <div className="row">
                   <h2>{item.name}</h2>
+                  <hr />
                   <span>PHP {item.price_per_night}</span>
                 </div>
                 <p>{item.description}</p>
@@ -123,8 +128,10 @@ class Rooms extends React.Component {
                     />
                   ))}
                 </div>
-
+                <hr />
+                <button class="rounded-lg px-5 py-2.5 bg-zinc-800 text-white hover:bg-stone-600">
                 <BookNow />
+                </button>
               </div>
             </div>
           ))}
